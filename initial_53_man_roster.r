@@ -28,7 +28,7 @@ init_df <- init_data |>
   
   
 init_df1 <- init_df |> 
-  mutate(Avg = select(data, "2013":"2021") |>  rowMeans(na.rm = TRUE)) 
+  mutate(Avg = select(init_df, "2013":"2021") |>  rowMeans(na.rm = TRUE)) 
 
 
 
